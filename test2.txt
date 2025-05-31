@@ -1,3 +1,0 @@
-This is test two file
-
-this is trial for git
