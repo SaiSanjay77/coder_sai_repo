@@ -1,0 +1,76 @@
+=<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #overlay {
+            display: none;
+            position: fixed;
+            z-index: 9999;
+            left: 0;
+            top: 0;
+            width: 100vw;
+            height: 100vh;
+            background: black;
+            color: lime;
+            font-size: 3em;
+            font-weight: bold;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h1>Welcome to SSN College of Engineering</h1>
+        <p>Where dreams come true</p>
+        <h1>Your journet towards greatness begins here!</h1>
+        <img src="College.jpg" alt="SSN College of Engineering" width="500" height="500">
+        <p>Please fill the form below to register for admission</p>
+        <form id="registrationForm">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="phone">Phone Number:</label><br>
+            <input type="tel" id="phone" name="phone" required><br><br>
+
+            <label for="program">Select Program:</label><br>
+            <select id="program" name="program">
+                <option value="B.Tech in Computer Science">B.Tech in Computer Science</option>
+                <option value="B.Tech in Electronics and Communication">B.Tech in Electronics and Communication</option>
+                <option value="B.Tech in Mechanical Engineering">B.Tech in Mechanical Engineering</option>
+                <option value="M.Tech in Data Science">M.Tech in Data Science</option>
+                <option value="M.Tech in Software Engineering">M.Tech in Software Engineering</option>
+                <option value="M.Tech in Cybersecurity">M.Tech in Cybersecurity</option>
+                <option value="M.Tech in Artificial Intelligence">M.Tech in Artificial Intelligence</option>
+                <option value="M.Tech in Cloud Computing">M.Tech in Cloud Computing</option>
+                <option value="M.Tech in Embedded Systems">M.Tech in Embedded Systems</option>
+                <option value="M.Tech in Power Electronics">M.Tech in Power Electronics</option>
+                <option value="M.Tech in Communication Systems">M.Tech in Communication Systems</option>
+                <option value="M.Tech in Structural Engineering">M.Tech in Structural Engineering</option>
+                <option value="M.Tech in Thermal Engineering">M.Tech in Thermal Engineering</option>
+                <option value="M.Tech in Design Engineering">M.Tech in Design Engineering</option>
+                <option value="M.Tech in Robotics">M.Tech in Robotics</option>
+                <option value="M.Tech in VLSI Design">M.Tech in VLSI Design</option>
+            </select><br><br>
+
+            <input type="submit" value="Register">
+            <input type="reset" value="Reset">
+        </form>
+        <p id="successMessage" style="color: lime; font-weight: bold;"></p>
+    </center>
+    <div id="overlay">Registered successfully</div>
+    <script>
+        document.getElementById('registrationForm').onsubmit = function(event) {
+            event.preventDefault();
+            document.getElementById('overlay').style.display = "flex";
+        };
+    </script>
+</body>
+</html>
