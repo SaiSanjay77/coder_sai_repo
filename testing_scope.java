@@ -7,5 +7,6 @@ public class testing_scope {
             System.out.println(b);
         }
         System.out.println(a);
+        // wont work and will show error coz b aint defined outside of the if block
     }
 }
