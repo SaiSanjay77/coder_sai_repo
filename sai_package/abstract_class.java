@@ -1,3 +1,5 @@
+package sai_package;
+
 abstract class Shape {
     abstract double calculateArea();
 }
