@@ -1,3 +1,4 @@
+
 class Car {
     String model;
     int year;
@@ -21,4 +22,3 @@ public class class_test{
         obj1.display();
     }
 }
-
